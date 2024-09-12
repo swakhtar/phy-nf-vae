@@ -8,7 +8,7 @@ from physvae import utils
 from physvae.locomotion.model import VAE, PlanarVAE
 
 # load data
-datadir = './data/locomotion/'
+datadir = './data'
 dataname = 'test'
 data_test = sio.loadmat('{}/data_{}.mat'.format(datadir, dataname))['data'].astype(np.float32)
 print(data_test.shape)

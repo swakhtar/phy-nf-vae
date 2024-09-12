@@ -135,11 +135,7 @@ def train(epoch, args, device, loader, model, optimizer):
         
         # data augmentation regularization
         if not args.no_phy:
-            model.eval()
-            #with torch.no_grad():
-            #   aug_dcoeff = torch.rand(batch_size, args.dim_z_phy, requires_grad=True, device=device)
-            #   aug_x_P = model.generate_physonly(aug_dcoeff, init_yy.detach())
-            
+            model.eval()            
             aug_dcoeff = torch.rand(batch_size, args.dim_z_phy, requires_grad=True, device=device)
             aug_x_P = model.generate_physonly(aug_dcoeff, init_yy.detach())
             model.train()
@@ -254,7 +250,7 @@ if __name__ == '__main__':
     elif(args.flow == 'planar' and args.nf_phy and args.nf_phy and (not args.attention_aux) and (not args.attention_phy)):
         method = 'nf'
     elif(args.flow == 'planar' and args.nf_phy and args.nf_phy and args.attention_aux and args.attention_phy):
-        method = 'att-nf' 
+        method = 'attnf' 
 
     print('start training with device', device)
     #print(vars(args))

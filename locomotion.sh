@@ -8,7 +8,7 @@ unmix="--hidlayers-unmixer 512 512"
 enc="--hidlayers-init-yy 64 32 --hidlayers-aux2-enc 64 32"
 
 # optimization
-optim="--learning-rate 1e-3 --train-size 400 --batch-size 100 --epochs 2 --grad-clip 5.0 --intg-lev 1 --weight-decay 1e-6 --adam-eps 1e-3 --balance-kld 1.0"
+optim="--learning-rate 1e-3 --train-size 400 --batch-size 100 --epochs 2000 --grad-clip 5.0 --intg-lev 1 --weight-decay 1e-6 --adam-eps 1e-3 --balance-kld 1.0"
 
 # other options
 others="--save-interval 9999999 --num-workers 0 --activation elu" #--cuda
