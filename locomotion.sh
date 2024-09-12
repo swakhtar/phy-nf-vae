@@ -58,10 +58,10 @@ fi
 
 if [[ -d "${outdir}" ]]; then
     echo "Output Directory Already exists: ${outdir}"
-    echo "Removing ${outdir}"
-    rm -r ${outdir}
-    echo "Creating Output Directory.."
-    mkdir ${outdir}
+    #echo "Removing ${outdir}"
+    #rm -r ${outdir}
+    #echo "Creating Output Directory.."
+    #mkdir ${outdir}
 else
     echo "Creating Output Directory.."
     mkdir ${outdir}
