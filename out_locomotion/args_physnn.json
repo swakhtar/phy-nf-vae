@@ -1,0 +1,73 @@
+{
+    "activation": "elu",
+    "adam_eps": 0.001,
+    "arch_feat": "mlp",
+    "attention_aux": false,
+    "attention_phy": false,
+    "balance_dataug": 0.1,
+    "balance_kld": 1.0,
+    "balance_lact_dec": 0.01,
+    "balance_lact_enc": 0.01,
+    "balance_unmix": 0.001,
+    "batch_size": 100,
+    "cuda": false,
+    "datadir": "./data/",
+    "dataname_train": "train",
+    "dataname_valid": "valid",
+    "dim_t": 101,
+    "dim_x": 3,
+    "dim_y": 3,
+    "dim_z_aux2": 15,
+    "dim_z_phy": 2,
+    "drop_feat": false,
+    "dt": 0.02,
+    "epochs": 2,
+    "feat_drop_perc": 0.0,
+    "flow": "no_flow",
+    "grad_clip": 5.0,
+    "hidlayers_H": [
+        128,
+        128
+    ],
+    "hidlayers_aux2_dec": [
+        512,
+        512
+    ],
+    "hidlayers_aux2_enc": [
+        64,
+        32
+    ],
+    "hidlayers_feat": [
+        512,
+        512
+    ],
+    "hidlayers_init_yy": [
+        64,
+        32
+    ],
+    "hidlayers_unmixer": [
+        512,
+        512
+    ],
+    "hidlayers_z_phy": [
+        128
+    ],
+    "intg_lev": 1,
+    "learning_rate": 0.001,
+    "nf_aux": false,
+    "nf_phy": false,
+    "no_phy": false,
+    "num_flows_aux": 4,
+    "num_flows_phy": 4,
+    "num_rnns_feat": 1,
+    "num_units_feat": 512,
+    "num_workers": 0,
+    "ode_solver": "euler",
+    "outdir": "./out_locomotion/",
+    "sample_drop_perc": 0.0,
+    "save_interval": 9999999,
+    "seed": 1234567890,
+    "train_size": 400,
+    "weight_decay": 1e-06,
+    "x_lnvar": -13.8
+}
